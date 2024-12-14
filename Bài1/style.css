@@ -1,0 +1,14 @@
+.container{
+    width: 50%;
+    height: 60%;
+    background-color: aliceblue;
+}
+
+h1{
+    margin-left: 45%;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}

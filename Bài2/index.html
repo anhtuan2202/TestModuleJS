@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bài 2</title>
+</head>
+<body>
+    <h1>Quản Lý Users</h1>
+
+    <section id="login">
+        <h2>Đăng Nhập</h2>
+        <input type="email" id="login-email" placeholder="Email">
+        <input type="password" id="login-password" placeholder="Password">
+        <button onclick="handleLogin()">Đăng Nhập</button>
+        <p id="login-message"></p>
+    </section>
+
+    <section id="register">
+        <h2>Đăng Ký</h2>
+        <input type="text" id="register-first-name" placeholder="First Name">
+        <input type="text" id="register-last-name" placeholder="Last Name">
+        <input type="email" id="register-email" placeholder="Email">
+        <input type="password" id="register-password" placeholder="Password">
+        <button onclick="handleRegister()">Đăng Ký</button>
+        <p id="register-message"></p>
+    </section>
+
+    <section id="users">
+        <h2>Danh Sách Users</h2>
+        <input type="text" id="user-search-keyword" placeholder="Tìm kiếm theo tên hoặc email">
+        <button onclick="handleViewUsers()">Xem Users</button>
+        <ul id="user-list"></ul>
+    </section>
+
+    <section id="posts">
+        <h2>Danh Sách Posts</h2>
+        <button onclick="handleViewPosts()">Xem Posts</button>
+        <ul id="post-list"></ul>
+    </section>
+
+    <section id="post-detail">
+        <h2>Chi Tiết Post</h2>
+        <input type="number" id="post-id" placeholder="Nhập ID Post">
+        <button onclick="handleViewPostDetail()">Xem Chi Tiết</button>
+        <div id="post-detail-info"></div>
+    </section>
+
+    <section id="user-posts">
+        <h2>Tìm Kiếm Posts Theo User</h2>
+        <input type="email" id="search-user-email" placeholder="Nhập Email User">
+        <button onclick="handleSearchPostsByUser()">Tìm Posts</button>
+        <ul id="user-post-list"></ul>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
